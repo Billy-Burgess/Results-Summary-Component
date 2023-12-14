@@ -1,0 +1,61 @@
+:root {
+    /* primary */
+    --reaction-txt: hsl(0, 100%, 67%);
+    --memory-txt: hsl(39, 100%, 56%);
+    --verbal-txt: hsl(166, 100%, 37%);
+    --visual-txt: hsl(234, 85%, 45%);
+    /* gradients */
+    --result-bg1: hsl(252, 100%, 67%);
+    --result-bg2: hsl(241, 81%, 54%);
+    --result-circle1: hsla(256, 72%, 46%, 1);
+    --result-circle2: hsla(241, 72%, 46%, 0);
+    /* neutral */
+    --body-bg: hsl(0, 0%, 100%);
+    --card-bg: hsl(221, 100%, 96%);
+    --total-txt: hsl(241, 100%, 89%);
+    --button-bg: hsl(224, 30%, 27%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.result {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.title {
+    font-size: 1.125rem;
+    padding-top: 2rem;
+}
+
+.score {
+    margin: 1.5rem auto;
+    border-radius: 6.25rem;
+    width: 11rem;
+    height: 11rem;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {}

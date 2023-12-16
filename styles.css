@@ -202,42 +202,82 @@ span.visual-nums {
 }
 
 .attribution {
-    margin-top: 3rem;
+    position: absolute;
+    bottom: 0;
 }
 
 /* mobile */
 @media screen and (max-width: 600px) {
-    body {
+
+    body,
+    html {
+        position: relative;
+        min-height: 100vh;
+        min-height: 100%;
         font-size: 1.2rem;
-    }
-
-    .card-container {
-        margin: 0;
-        width: 100%;
-        display: block;
-    }
-
-    .title {
-        margin-top: 3rem;
+        /* margin: 0; */
     }
 
     .rating {
-        margin: auto;
+        width: auto;
+        padding: 0 2rem 2rem 2rem;
+    }
+
+    .result {
+        /* padding-top: 5rem; */
+        border-radius: 0 0 1.5rem 1.5rem;
+    }
+
+    .card-container {
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: relative;
     }
 
     .summary {
-        max-width: 100%;
+        max-width: 36rem;
+        margin: 1.5rem 4rem 0 4rem;
+        padding: 0;
         box-shadow: none;
+        font-size: 1rem;
     }
 
     .summary-txt {
-        padding-bottom: 1.875rem;
+        padding-bottom: 1.5rem;
     }
 
-    .tests {
-        margin: 0;
-        width: 429px;
-        display: block;
+    .reaction-score {
+        width: auto;
     }
 
+    .memory-score {
+        width: auto;
+    }
+
+    .verbal-score {
+        width: auto;
+    }
+
+    .visual-score {
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+
+    .continue {
+        max-width: 15rem;
+    }
+
+    .attribution {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
